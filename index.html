@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/fonts.css">
+</head>
+<body>
+    <div class="content">
+        <header>
+            
+            <div class="menu">
+
+                <div class="menu__left">
+                    
+                    <div class="menu__logo">
+                        <img src="img/logo.svg" alt="">
+                    </div>
+
+                    <div class="menu__socials">
+                        <button class="menu__social"><a href=""><img src="img/instagram.svg" alt=""></a></button>
+                        <button class="menu__social"><a href=""><img src="img/telegram.svg" alt=""></a></button>
+                        <button class="menu__social"><a href=""><img src="img/whatsapp_icon.svg" alt=""></a></button>
+                        <button class="menu__social"><a href=""><img src="img/vk.svg" alt=""></a></button>
+                    </div>
+
+                </div>
+
+                <ul class="menu__list" id="menu">
+                    <li сlass="menu__item"><a href="#welcome_anch">О компании</a></li>
+                    <li сlass="menu__item"><a href="#catalog_anch">Каталог</a></li>
+                    <li сlass="menu__item"><a href="#packs_anch">Наборы</a></li>
+                    <li сlass="menu__item"><a href="">Путеводитель</a></li>
+                </ul>
+
+                <div class="hamburger-gone" id="hamburger">
+                    <img class="hamburger__svg" src="img/burger.svg"></i>
+                </div>
+                
+
+            </div>
+        </header>
+        <div class="popup" id="popup">
+        
+        </div>
+        <main>
+            <div class="intro__top">
+                <div class="intro__conteiner">
+                
+                    <div class="intro__topbar">
+                
+                        <div class="topbar__left">
+                
+                            <div class="topbar__country">
+                                <img src="img/turkey.svg" alt="">
+                                <p class="topbar__h3" href="">Стамбул</p>
+                            </div>
+                
+                            <div class="topbar__country">
+                                <img src="img/dubai.svg" alt="">
+                                <p class="topbar__h3" href="">Дубай</p>
+                            </div>
+                
+                            <div class="topbar__country">
+                                <img src="img/russia.svg" alt="">
+                                <p class="topbar__h3" href="">Санкт-Петербург</p>
+                            </div>
+                
+                        </div>
+                
+                        <div class="topbar__right">
+                
+                            <button class="cart">
+                                <img src="img/shopping cart.svg" alt="">
+                                <a>
+                                    <p class="cartFont">Ваш заказ</p>
+                                </a>
+                                <div class="cart__price">
+                                    <p class="cartFont_rev">9450 ₽</p>
+                                </div>
+                            </button>
+                
+                            <div class="topbar__bookmark">
+                                <a class="bookmark__icon" href=""><img src="img/bookmark.svg" alt=""></a>
+                                <div class="bookmark__circle">
+                                    <p class="bookmarkFont">2</p>
+                                </div>
+                            </div>
+                
+                        </div>
+                
+                    </div>
+                </div>
+            </div>
+
+            <div class="welcome" id="welcome_anch">
+                <div class="welcome__img">
+                    <img src="img/intro.png" alt="">
+                </div>
+            </div>
+
+            <div class="catalog__filter">
+                <nav class="filter__list">
+                    <ul class="filter__buttons">
+                        <li><button data-f="all" class="filter__button">Все</button></li>
+                        <li><button data-f="bakery" class="filter__button">Выпечка</button></li>
+                        <li><button data-f="fruits" class="filter__button">Фрукты</button></li>
+                        <li><button data-f="spicy" class="filter__button">Острое</button></li>
+                        <li><button data-f="snacks" class="filter__button">Закуски</button></li>
+                    </ul>
+                </nav>
+                
+            </div>
+
+            <div class="catalog" id="catalog_anch">
+
+                <div class="catalog__conteiner">
+  
+                    <div class="catalog__content">
+
+                        <div class="item snacks all">
+                            <img class="item__img" src="img/chips.png" alt="">
+                            <div class="item__description">
+                                <p class="item__title">Чипсы, 50гр</p>
+                                <p class="item__subtitle">Вкус: соль</p>
+                            </div>
+                            <div class="item__price">
+                                <p class="item__priceFont">120 ₽</p>
+                                <button class="item__button">
+                                    <img src="img/shopping cart.svg" alt="">
+                                    <a>
+                                        <p class="cartFont">В заказ</p>
+                                    </a>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="item fruits all">
+                            <img class="item__img" src="img/strawberry.png" alt="">
+                            <div class="item__description">
+                                <p class="item__title">Клубника, 50гр</p>
+                                <p class="item__subtitle">Кусочками</p>
+                            </div>
+                            <div class="item__price">
+                                <p class="item__priceFont">250 ₽</p>
+                                <button class="item__button">
+                                    <img src="img/shopping cart.svg" alt="">
+                                    <a>
+                                        <p class="cartFont">В заказ</p>
+                                    </a>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="item spicy all">
+                            <img class="item__img" src="img/meatandsmth.png" alt="">
+                            <div class="item__description">
+                                <p class="item__title">Печеный хумус, 60гр</p>
+                                <p class="item__subtitle">Нут, тахини, винный уксус, кумин</p>
+                            </div>
+                            <div class="item__price">
+                                <p class="item__priceFont">200 ₽</p>
+                                <button class="item__button">
+                                    <img src="img/shopping cart.svg" alt="">
+                                    <a>
+                                        <p class="cartFont">В заказ</p>
+                                    </a>
+                                </button>
+                            </div>                            
+
+                        </div>
+
+                        <div class="item bakery all">
+                            <img class="item__img" src="img/croissaunt.png" alt="">
+                            <div class="item__description">
+                                <p class="item__title">Круассаны, 70гр</p>
+                                <p class="item__subtitle">Вкус: сливочный сыр</p>
+                            </div>
+                            <div class="item__price">
+                                <p class="item__priceFont">200 ₽</p>
+                                <button class="item__button">
+                                    <img src="img/shopping cart.svg" alt="">
+                                    <a>
+                                        <p class="cartFont">В заказ</p>
+                                    </a>
+                                </button>
+                            </div>
+                        
+                        </div>
+
+                        <div class="item snacks all">
+                            <img class="item__img" src="img/chips.png" alt="">
+                            <div class="item__description">
+                                <p class="item__title">Чипсы, 50гр</p>
+                                <p class="item__subtitle">Вкус: паприка</p>
+                            </div>
+                            <div class="item__price">
+                                <p class="item__priceFont">120 ₽</p>
+                                <button class="item__button">
+                                    <img src="img/shopping cart.svg" alt="">
+                                    <a>
+                                        <p class="cartFont">В заказ</p>
+                                    </a>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="item fruits all">
+                            <img class="item__img" src="img/strawberry.png" alt="">
+                            <div class="item__description">
+                                <p class="item__title">Клубника, 100гр</p>
+                                <p class="item__subtitle">Кусочками</p>
+                            </div>
+                            <div class="item__price">
+                                <p class="item__priceFont">500 ₽</p>
+                                <button class="item__button">
+                                    <img src="img/shopping cart.svg" alt="">
+                                    <a>
+                                        <p class="cartFont">В заказ</p>
+                                    </a>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="item spicy all">
+                            <img class="item__img" src="img/meatandsmth.png" alt="">
+                            <div class="item__description">
+                                <p class="item__title">Печеный хумус, 90гр</p>
+                                <p class="item__subtitle">Нут, тахини, винный уксус, кумин</p>
+                            </div>
+                            <div class="item__price">
+                                <p class="item__priceFont">330 ₽</p>
+                                <button class="item__button">
+                                    <img src="img/shopping cart.svg" alt="">
+                                    <a>
+                                        <p class="cartFont">В заказ</p>
+                                    </a>
+                                </button>
+                            </div>
+                        
+                        </div>
+                        
+                        <div class="item bakery all">
+                            <img class="item__img" src="img/croissaunt.png" alt="">
+                            <div class="item__description">
+                                <p class="item__title">Круассаны, 140гр</p>
+                                <p class="item__subtitle">Вкус: сливочный сыр</p>
+                            </div>
+                            <div class="item__price">
+                                <p class="item__priceFont">350 ₽</p>
+                                <button class="item__button">
+                                    <img src="img/shopping cart.svg" alt="">
+                                    <a>
+                                        <p class="cartFont">В заказ</p>
+                                    </a>
+                                </button>
+                            </div>
+                        
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+
+            <section class="bonus__catalog" id="packs_anch">
+
+                <div class="packages">
+                    <div class="packages__conteiner">
+                        <div class="show__packs">
+                            <button class="show__button">
+                                <p>Показать наборы</p>
+                            </button>
+                        </div>
+                        <div class="packages__content">
+
+                            <div class="item">
+                                <img src="img/pack3.png" alt="">
+                                <div class="item__description">
+                                    <p class="item__title">Набор для двоих, 580гр</p>
+                                    <p class="item__subtitle">Багет, ржанная чиабатта, вафли, гриссини</p>
+                                </div>
+                                <div class="item__price">
+                                    <p class="item__priceFont">2375 ₽</p>
+                                    <button class="item__button">
+                                        <img src="img/shopping cart.svg" alt="">
+                                        <a>
+                                            <p class="cartFont">В заказ</p>
+                                        </a>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <img src="img/pack4.png" alt="">
+                                <div class="item__description">
+                                    <p class="item__title">Большой набор , 1100гр</p>
+                                    <p class="item__subtitle">Ассорти мясных деликатесов, ассорти сыров и антипасти</p>
+                                </div>
+                                <div class="item__price">
+                                    <p class="item__priceFont">4000 ₽</p>
+                                    <button class="item__button">
+                                        <img src="img/shopping cart.svg" alt="">
+                                        <a>
+                                            <p class="cartFont">В заказ</p>
+                                        </a>
+                                    </button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                
+                </div>
+            </section>
+
+            <section class="bar">
+                
+                <div class="bar__conteiner">
+                    <div class="bar__title">
+                        <h1>Выберите подходящее вино!</h1>
+                    </div>
+                    <div class="slider">
+                        <div class="wrap">
+                            <div class="slider__item fade">
+                                <img src="img/wine_toucas.png" alt="" />
+                            </div>
+                            <div class="slider__item fade">
+                                <img src="img/wine_pago.png" alt="" />
+                            </div>
+                            <div class="slider__item fade">
+                                <img src="img/wine_loveblock.png" alt="" />
+                            </div>
+                            <div class="prev">⤺</div>
+                            <div class="next">⤻</div>
+                        </div>
+                        <div class="sliderNew-dots">
+                            <div class="dot dot-active"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                
+
+            </section>
+
+
+
+            <footer>
+
+                <div class="footer__conteiner">
+
+                <div class="footer__left">
+
+                    <div class="footer__leftcont">
+                        <div class="footer__logo">
+                            
+                            <img src="img/logo_white.svg" alt="">
+                            
+                        </div>
+                            
+                        <div class="footer__socials">
+                            <button class="menu__social"><a href=""><img src="img/insta_black.svg" alt=""></a></button>
+                            <button class="menu__social"><a href=""><img src="img/vk_black.svg" alt=""></a></button>
+                            
+                        </div>
+                        
+                        <div class="footer__emailcont">
+                            <div class="footer__email">
+                                <form action="" class="footer__form">
+                                    <input class="footer__input" type="moyapochta@mail.ru" name="" id="emailEntry"></input>
+                                    <button class="footer__button" id="subBtn">Подписаться</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                        
+
+                    </div>
+
+                    <div class="footer__right">
+                        <div class="footer__rightcont">
+                            <ul class="footer__menu">
+                                <li class="footer__h2">О нас</li>
+                                <li class="footer__h3">О компании</li>
+                                <li class="footer__h3">Команда</li>
+                                <li class="footer__h3">Кейтеринг</li>
+                                <li class="footer__h3">Блог</li>
+                            </ul>
+                            <ul class="footer__menu">
+                                <li class="footer__h2">Вояжи</li>
+                                <li class="footer__h3">Вояж в Петергоф</li>
+                                <li class="footer__h3">По ладежским шахерам</li>
+                                <li class="footer__h3">Вояж в Кронштадт</li>
+                                <li class="footer__h3">Вояж в крепость Орешек</li>
+                            </ul>
+                            <ul class="footer__menu">
+                                <li class="footer__h2">Катера и яхты</li>
+                                <li class="footer__h3">Эль Чапа</li>
+                                <li class="footer__h3">Princess 25M</li>
+                                <li class="footer__h3">Meridian</li>
+                                <li class="footer__h3">Виндзора</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                
+            </footer>
+            <div class="superfooter">
+                <div class="superfooter__cont">
+                    <ul>
+                        <li>© Кураж-Вояж</li>
+                        <li>Конфиденциальность</li>
+                        <li>Политика сайта</li>
+                    </ul>
+                </div>
+            </div>
+            
+        </main>
+        <script src="js/filter.js"></script>
+        <script src="js/slider.js"></script>
+</body>
+</html>
